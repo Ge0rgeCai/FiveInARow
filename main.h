@@ -3,18 +3,21 @@
 #include <stdio.h>
 #include <Windows.h>
 
-#define Chessboard 15								//æ£‹ç›˜å¤§å°
+#define Chessboard 15								//ÆåÅÌ´óĞ¡
 
-int g_chessboard[Chessboard][Chessboard];			//æ£‹ç›˜å†…å®¹
+int g_chessboard[Chessboard][Chessboard];			//ÆåÅÌÄÚÈİ
 
-int RunGame();										//æ¸¸æˆå¼€å§‹
-int g_currentGamer;									//æ¸¸æˆç©å®¶ é»‘å­ä¸º1ï¼Œç™½å­ä¸º2
-int g_cursorX, g_cursorY;							//å…‰æ ‡ä½ç½®
-int g_count;										//æ¸¸æˆå›åˆæ•°
+int RunGame();										//ÓÎÏ·¿ªÊ¼
+int g_currentGamer;									//ÓÎÏ·Íæ¼Ò ºÚ×ÓÎª1£¬°××ÓÎª2
+int g_cursorX, g_cursorY;							//¹â±êÎ»ÖÃ
+int g_count;										//ÓÎÏ·»ØºÏÊı
 
-void Init();										//æ¸¸æˆåˆå§‹åŒ–
-void DrawChessboard();								//ç»˜åˆ¶æ£‹ç›˜
-int g_Control(int* X, int* Y);                      //æ§åˆ¶å…‰æ ‡
-int PutDown();                                       //ä¸‹å­
+void Init();										//ÓÎÏ·³õÊ¼»¯
+void DrawChessboard();								//»æÖÆÆåÅÌ
+int g_Control(int* X, int* Y);                      //¿ØÖÆ¹â±ê
+int PutDown();                                      //ÏÂ×Ó
+int Check();                                        //ÅĞ¶ÏÓÎÏ·Ê¤Àû
+int g_Winner;                                       //Ó®¼Ò
+int gameEnd();                                  //ÓÎÏ·½áÊøºóµÄĞĞÎªÏŞÖÆ
 
 #endif

@@ -1,3 +1,4 @@
+//此文件单独编译，用于查看键盘的key值
 #include <stdio.h>
 #include <conio.h>
 
