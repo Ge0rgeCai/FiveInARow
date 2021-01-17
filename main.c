@@ -77,21 +77,22 @@ void Init(){
 void DrawChessboard(){
 	for (int i = 0; i < Chessboard; i++){
 		for (int j = 0; j < Chessboard; j++){
-			if (i == g_cursorY && j == g_cursorX) printf(" ©ï" );
-			else if (g_chessboard[j][i] == 1) printf(" ¡ñ");
-			else if (g_chessboard[j][i] == 2) printf(" ¡ð");
-			else if (i == 0 && j == 0) printf(" ©³");
-			else if (i == 0 && j == Chessboard -1) printf(" ©· ");
-			else if (i == Chessboard - 1 && j == 0) printf(" ©»");
-			else if (i == Chessboard - 1 && j == Chessboard - 1) printf(" ©¿ ");
-			else if (i == 0) printf(" ©×");
-			else if (i == Chessboard -1) printf(" ©ß");
-			else if (j == 0) printf(" ©Ç");
-			else if (j == Chessboard -1) printf(" ©Ï ");
-			else printf(" ©à");
+			if (i == g_cursorY && j == g_cursorX) printf("©ï ");
+			else if (g_chessboard[j][i] == 1) printf("¡ñ");
+			else if (g_chessboard[j][i] == 2) printf("¡ð");
+			else if (i == 0 && j == 0) printf("©³ ");
+			else if (i == 0 && j == Chessboard -1) printf("©·");
+			else if (i == Chessboard - 1 && j == 0) printf("©» ");
+			else if (i == Chessboard - 1 && j == Chessboard - 1) printf("©¿");
+			else if (i == 0) printf("©× ");
+			else if (i == Chessboard -1) printf("©ß ");
+			else if (j == 0) printf("©Ç ");
+			else if (j == Chessboard -1) printf("©Ï");
+			else printf("©à ");
 		}
 		printf("\n");
 	}
+	printf("\n        ESC---ÍË³ö³ÌÐò\n");
 }
 
 int g_Control(int* X, int* Y){
